@@ -1,0 +1,113 @@
+/* Footer */
+
+.footer {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  padding-left: 0.5rem;
+  padding-bottom: 0.92rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Rubik';
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.footerLinks a {
+  color: #4b4b4b;
+  padding-right: 0.5rem;
+}
+
+@media screen and (min-device-width: 1025px) {
+  .footer .header {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+
+  .footerLinks a {
+    padding-right: 2.5rem;
+  }
+}
+
+/* Terms&Conditions & Privacy Policy */
+
+.modalContainer,
+.modalPrivacy {
+  height: 100vh;
+  background-color: white;
+}
+
+.modalContainer {
+  width: 100vw;
+}
+
+.modalPrivacy {
+  overflow-y: scroll;
+}
+
+.modalPrivacy h1 {
+  margin-left: 0;
+}
+
+.modalPrivacy .bodyPrivacy {
+  padding-bottom: 1rem;
+}
+
+.modalContainer .header {
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.modalContainer h1 {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+
+.closeBttn,
+.closePrivacy {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+.closeBttn button:hover,
+.closePrivacy button:hover {
+  color: #4f4f4f;
+}
+
+.closeBttn button,
+.closePrivacy button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.modalContainer .body {
+  flex: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+  padding-left: 0.1rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-device-width: 1025px) {
+  .modalContainer h1 {
+    font-size: 2.4rem;
+  }
+
+  .modalContainer .body {
+    font-size: 1.5rem;
+  }
+}

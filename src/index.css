@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'CgMatra';
+  src: local('CgMatra-Medium'),
+    url('./fonts/CgMatra-Medium.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik-Light'), url('./fonts/Rubik-Light.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+  font-family: Rubik;
+  color: #4b4b4b;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  color: #ffffff;
+  text-shadow: none;
+  background: grey;
+}

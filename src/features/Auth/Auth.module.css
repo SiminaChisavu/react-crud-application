@@ -1,0 +1,155 @@
+.container {
+  width: 100%;
+  max-height: 100vh;
+  font-family: Rubik;
+  background-image: url('./media/form.jpg');
+  background-size: cover;
+}
+
+.header {
+  color: #4b4b4b;
+}
+
+.form-container input {
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 22px;
+  line-height: 22px;
+  color: #4b4b4b;
+  max-width: 50%;
+}
+
+::placeholder {
+  font-size: 1rem;
+}
+
+.form_container {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 50rem;
+  max-height: 30rem;
+  margin: 5rem auto;
+  padding-left: 1rem;
+}
+
+.form_container input {
+  min-width: 11rem;
+  min-height: 1.2rem;
+}
+
+.form_container h1 {
+  font-size: 20px;
+}
+
+.errors_firstName,
+.errors_lastName {
+  align-self: flex-start;
+}
+
+.button button {
+  border: none;
+  color: #ffffff;
+  background-color: #4f4f4f;
+  border-color: transparent;
+  line-height: 22px;
+  padding: 5px 16px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 0.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: grey;
+  color: #ffffff;
+}
+
+.invalid,
+.errors_firstName,
+.errors_lastName,
+.errors_email,
+.errorsretype_password {
+  border-color: #ff3131;
+  color: #ff0000;
+}
+
+.firstName {
+  order: 1;
+}
+
+.errors_firstName {
+  order: 2;
+}
+
+.lastName {
+  order: 3;
+}
+
+.errors_lastName {
+  order: 4;
+}
+
+.email {
+  order: 5;
+}
+
+.errors_email {
+  order: 6;
+}
+
+.password {
+  order: 7;
+}
+
+.errors_password {
+  order: 8;
+  color: #ff3131;
+  display: inline;
+  width: 45%;
+}
+
+.retype_password {
+  order: 9;
+}
+
+.errorsretype_password {
+  order: 10;
+  display: inline;
+  width: 24%;
+}
+
+.button {
+  order: 11;
+}
+
+@media screen and (min-device-width: 1025px) {
+  .form_container {
+    align-items: center;
+    padding-top: 5rem;
+  }
+
+  .button,
+  h1 {
+    align-self: flex-start;
+    margin-left: 19rem;
+  }
+
+  .errors_email,
+  .errors_password,
+  .errorsretype_password {
+    padding-left: 0.6rem;
+    width: 25%;
+  }
+
+  .serverError {
+    padding-right: 1.9rem;
+  }
+
+  .errors_firstName,
+  .errors_lastName {
+    padding-left: 18.9rem;
+  }
+}

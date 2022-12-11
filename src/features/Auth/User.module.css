@@ -1,0 +1,211 @@
+/* User's profile */
+
+.userFormContent {
+  min-width: 25vw;
+  height: 70vh;
+  margin: 2rem 0.5rem;
+  padding-right: 1rem;
+}
+
+.editProfile h1 {
+  margin-left: 2rem;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.userContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  border: #4b4b4b solid 1px;
+  width: 100%;
+  height: 70%;
+  padding-top: 1.5rem;
+  font-size: 0.75rem;
+}
+
+.userContent label,
+.successMsj {
+  font-weight: bold;
+  padding-left: 1.5rem;
+}
+
+.updateBtn {
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.userContent input[name='firstName'],
+.userContent input[name='lastName'] {
+  margin-left: 0.9rem;
+}
+
+.userContent input[name='email'] {
+  margin-left: 2.8rem;
+}
+
+.userContent input[name='password'] {
+  margin-left: 1.2rem;
+}
+
+.successMsj {
+  display: inline-block;
+  color: #5aa897;
+  font-size: 0.9rem;
+}
+
+.userForm button {
+  border: none;
+  color: #ffffff;
+  background-color: #4f4f4f;
+  border-color: transparent;
+  line-height: 22px;
+  padding: 5px 16px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 0.1rem;
+}
+
+.userForm button:hover {
+  background-color: grey;
+  color: #ffffff;
+}
+
+/* Form validation */
+
+.invalid {
+  color: #ff0000;
+  border-color: #ff3131;
+  padding-left: 1.5rem;
+}
+
+@media screen and (min-device-width: 1025px) {
+  .editProfile {
+    margin: 0;
+    background-image: url('./media/form.jpg');
+    background-size: cover;
+  }
+
+  .userFormContent {
+    margin-left: 38rem;
+  }
+
+  .userContent {
+    border: none;
+  }
+
+  .userForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 100vw;
+    max-height: 30rem;
+  }
+
+  .editProfile h1 {
+    margin-top: 5rem;
+    padding-left: 37.5rem;
+    font-size: 1.25rem;
+  }
+
+  .userContent {
+    font-size: 1rem;
+  }
+
+  .fName,
+  .lName {
+    padding-right: 0.2rem;
+  }
+
+  .email {
+    padding-right: 0.7rem;
+  }
+
+  .password {
+    padding-right: 0.4rem;
+  }
+
+  .successMsj {
+    font-size: 1rem;
+  }
+}
+
+/* Manage Db  */
+
+.main {
+  margin: 0 auto;
+  font-size: 0.75rem;
+  overflow: scroll;
+}
+
+.main::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.main a {
+  color: #4b4b4b;
+  font-size: 0.9rem;
+  padding-bottom: 15px;
+}
+
+.main h1 {
+  margin-left: 0.1rem;
+  padding-bottom: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.main h1,
+.icon {
+  text-transform: uppercase;
+  color: #4b4b4b;
+}
+
+.icon {
+  color: #5aa897;
+}
+.tableDb {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableDb td,
+.tableDb th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tableDb .icon {
+  text-align: center;
+}
+
+.tableDb tr:hover {
+  background-color: #ddd;
+}
+
+.tableDb th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4b4b4b;
+  color: white;
+}
+
+@media screen and (min-device-width: 1025px) {
+  .main a,
+  .main h1 {
+    font-size: 1.1rem;
+  }
+
+  .main h1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .tableDb {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+  }
+}

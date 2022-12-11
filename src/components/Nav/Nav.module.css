@@ -1,0 +1,104 @@
+.main-menu {
+  padding-top: 1rem;
+}
+
+.login a {
+  padding-right: 1rem;
+}
+
+.main-menu .active {
+  padding: 1.85rem;
+  background-color: #4f4f4f;
+  color: white;
+}
+
+.main-menu ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  width: 100%;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+
+.main-menu a {
+  background-color: rgba(0, 0, 0, 0);
+  color: #4b4b4b;
+}
+
+.logo {
+  font-family: CgMatra;
+  font-size: 31px;
+  color: #4b4b4b;
+  font-weight: 200;
+  margin-right: 25px;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-flow: column;
+  z-index: 5;
+  padding: 0 0.5rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.isNotAdmin {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .main-menu ul {
+    gap: 0.5rem;
+    width: 90%;
+    line-height: 1rem;
+  }
+
+  .main-menu a {
+    background-color: rgba(0, 0, 0, 0);
+    color: #4b4b4b;
+  }
+
+  .main-menu .active {
+    background: none;
+    color: #4b4b4b;
+  }
+
+  li:first-child {
+    padding-left: 0.5rem;
+  }
+
+  li:not(:first-child) {
+    font-size: 0.75rem;
+  }
+
+  .logo {
+    font-size: 0.9rem;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0.2rem;
+  }
+
+  .dropdown-menu {
+    display: flex;
+    flex-flow: column;
+    padding: 0 0.5rem;
+    z-index: 5;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .login {
+    display: flex;
+    justify-content: row;
+    gap: 0.5rem;
+  }
+
+  .login a:nth-child(2) {
+    padding-right: 0.5rem;
+  }
+}

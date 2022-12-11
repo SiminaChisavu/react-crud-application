@@ -1,0 +1,447 @@
+/* Artwork list */
+
+.artworkList {
+  width: 100vw;
+  min-height: 100%;
+  padding-top: 1rem;
+  background-color: #4b4b4b;
+}
+
+.artworkList h1 {
+  margin-left: 5rem;
+  padding-bottom: 1.5rem;
+  font-family: CgMatra;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.contentArtlist {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+  align-items: center;
+  width: 9.4rem;
+  max-height: 70%;
+  margin-left: 5rem;
+}
+
+.cardTitle {
+  font-family: CgMatra;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.artworkList img {
+  height: 11rem;
+  width: 7.5rem;
+  border-radius: 3px;
+}
+
+.prevBtn,
+.nextBtn {
+  position: absolute;
+  top: 50%;
+  color: #ffffff;
+}
+
+.prevBtn {
+  left: 1rem;
+}
+
+.nextBtn {
+  right: 1rem;
+}
+
+@media screen and (min-device-width: 1025px) {
+  .artworkList {
+    min-height: 100%;
+    overflow: auto;
+  }
+  .artworkList h1 {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 40rem;
+    font-family: CgMatra;
+    font-size: 2rem;
+  }
+
+  .contentArtlist {
+    width: 90%;
+    max-height: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-gap: 3.5rem;
+    margin-left: 4rem;
+    padding: 3.5rem 2rem;
+  }
+
+  .cardTitle {
+    font-size: 1.5rem;
+  }
+
+  .artworkList img {
+    height: 250px;
+    width: 100%;
+  }
+
+  .artworkCard:hover {
+    transform: scale(1.2);
+  }
+}
+
+/* Artwork details */
+
+.card-details {
+  height: 80%;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0.4rem 1rem 0;
+}
+
+.card-header h1 {
+  font-size: 1.5rem;
+  font-family: CgMatra;
+  width: 100%;
+  padding-left: 1.3rem;
+}
+
+.image-poster {
+  height: 16rem;
+  width: 90%;
+}
+
+.card-content {
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  padding: 0 1.5rem;
+}
+
+@media screen and (min-device-width: 1025px) {
+  .card-header {
+    padding-left: 5rem;
+  }
+
+  .card-header h1 {
+    align-self: flex-start;
+    position: relative;
+    left: -19rem;
+    font-size: 2rem;
+  }
+
+  .image-poster {
+    height: 32rem;
+    width: 32rem;
+  }
+
+  .title {
+    font-family: CgMatra;
+  }
+
+  .card-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    min-height: 100vh;
+    overflow: visible;
+  }
+
+  .card-content {
+    padding-top: 4.8rem;
+    font-size: 1.2rem;
+  }
+
+  div .push-right {
+    width: 80%;
+    padding-right: 5rem;
+    letter-spacing: 2px;
+  }
+}
+
+/* Add Adwork&Edit Artwork (including delete artwork)*/
+
+.addArtwork {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.editArtwork,
+.addArtwork {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 2rem 0.5rem;
+  padding-right: 1rem;
+}
+
+.addArtHeader {
+  margin-left: -19.5rem;
+}
+
+.editArtHeader h1,
+.dltIcon,
+.addArtwork h1 {
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+
+.editArtHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10rem;
+  padding-left: 4.5rem;
+}
+
+.dltIcon {
+  padding-left: 4.3rem;
+  cursor: pointer;
+}
+
+.editForm,
+.addForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  border: #4b4b4b solid 1px;
+  width: 100%;
+}
+
+.editForm,
+.addForm {
+  max-height: 80%;
+}
+
+.addForm {
+  padding-left: 0.5rem;
+  margin-bottom: 10rem;
+  overflow: scroll;
+}
+
+.addForm::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.formContent {
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding-top: 1.3rem;
+}
+
+.formContent input {
+  width: 13.3rem;
+}
+
+.formContent select {
+  width: 13.2rem;
+}
+
+.formContent input[name='artist'] {
+  margin-left: 1rem;
+}
+
+.formContent input[name='title'] {
+  margin-left: 1.5rem;
+}
+
+.formContent input[name='country'] {
+  margin-left: 0.1rem;
+}
+
+.formContent input[name='year'] {
+  margin-left: 1.4rem;
+}
+
+.formContent input[name='details'] {
+  margin-left: 0.5rem;
+}
+
+.formContent select[name='style'] {
+  margin-left: 1.2rem;
+}
+
+.formContent select[name='material'] {
+  margin-left: 0.2rem;
+}
+
+.formContent input[name='poster'] {
+  margin-left: 0.8rem;
+}
+
+.formContent p {
+  margin-bottom: 1rem;
+}
+
+.successMsj {
+  display: inline-block;
+  color: #5aa897;
+  background-color: rgba(90, 168, 151, 0.2);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.formContent button,
+.addArtwork button,
+.modalContent button {
+  border: none;
+  color: #ffffff;
+  background-color: #4f4f4f;
+  border-color: transparent;
+  line-height: 1rem;
+  padding: 5px 16px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 0.1rem;
+}
+
+.formContent button:hover,
+.addArtwork button:hover {
+  background-color: grey;
+  color: #ffffff;
+}
+
+/* Form validation */
+
+.invalid {
+  border-color: #ff3131;
+  color: #ff0000;
+}
+
+/* Delete modal */
+
+.dltModal {
+  position: fixed;
+  z-index: 9999;
+  left: 48%;
+  top: 0.2px;
+  width: 100%;
+  height: 100%;
+  transform: translate(-48%);
+  background-color: rgba(79, 79, 79, 0.5);
+}
+
+.modalContent {
+  background-color: #ffffff;
+  margin: 17rem 5rem;
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+
+.modalBtns {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+
+@media screen and (min-device-width: 1025px) {
+  .addArtwork,
+  .editArtwork {
+    margin: 2rem 0;
+    padding-top: 3rem;
+    background-image: url('./media/form.jpg');
+    background-size: cover;
+  }
+
+  .editForm,
+  .addForm {
+    border: none;
+  }
+
+  .addArtHeader {
+    padding-left: 8rem;
+  }
+
+  .addArtwork label,
+  .forSbjct {
+    font-weight: bold;
+  }
+
+  .editArtHeader h1,
+  .addArtwork h1 {
+    font-size: 1.25rem;
+  }
+
+  .dltIcon {
+    font-size: 1rem;
+  }
+
+  .editArtHeader {
+    padding-left: 19.5rem;
+    align-items: center;
+    width: 25%;
+  }
+
+  .formContent {
+    font-size: 1rem;
+  }
+
+  .successMsj {
+    font-size: 0.99rem;
+  }
+  .editForm {
+    margin: 0 auto;
+    width: 40%;
+    min-height: 50%;
+  }
+
+  .formContent {
+    font-weight: bold;
+  }
+
+  .formContent button,
+  .addArtwork button {
+    margin-top: 0.1rem;
+    line-height: 22px;
+    font-weight: bold;
+  }
+
+  .formContent input[name='artist'] {
+    margin-left: 1.2rem;
+  }
+
+  .formContent input[name='title'] {
+    margin-left: 1.7rem;
+  }
+
+  .formContent input[name='country'] {
+    margin-left: 0.1rem;
+  }
+
+  .formContent input[name='year'] {
+    margin-left: 1.8rem;
+  }
+
+  .formContent input[name='details'] {
+    margin-left: 0.7rem;
+  }
+
+  .formContent select[name='style'] {
+    margin-left: 1.6rem;
+  }
+
+  .formContent select[name='material'] {
+    margin-left: 0.4rem;
+  }
+
+  .formContent input[name='poster'] {
+    margin-left: 1.1rem;
+  }
+
+  .checkboxes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modalContent {
+    margin: 17rem 35rem;
+    padding: 1rem 4rem;
+  }
+}
