@@ -21,7 +21,7 @@ Start the development API server with `npm run start:server`. The server starts 
 
 ### Home page
 
-In this page are displayed the followings:
+In this page are displayed the following:
 
 1. Navigation meniu
 2. A drop-down menu with social media links
